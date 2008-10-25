@@ -1,0 +1,63 @@
+Xft*dpi: 99
+Xft*antialias: true
+Xft*hinting: true
+Xft*hintstyle: hintfull
+xft*rgba: rgb
+
+#URxvt*termName:		rxvt
+
+URxvt*depth:		32
+URxvt*font: 		-xos4-terminus-medium-r-normal-*-14-*-*-*-*-*-*-*
+URxvt*boldFont: 	-xos4-terminus-bold-*-*-*-14-*-*-*-*-*-*-u
+URxvt*reverseVideo:     false
+URxvt*fading:   	20
+URxvt*fadecolor:  	#71C5F4
+URxvt*background:   	rgba:0000/0000/0000/dddd
+URxvt*foreground:   	#D3D3D3
+URxvt*shading:  	20
+URxvt*loginShell: 	True
+URxvt*inheritPixmap: 	False
+URxvt*scrollBar: 	False 
+URxvt*cutchars: 	`"()'*<>[]{|}
+URxvt*termName: 	rxvt-unicode
+URxvt.mapAlert:   	True
+URxvt.visualBell: 	False
+! Plugin stuff
+URxvt*urlLauncher: 	opera -newpage
+URxvt.perl-ext-common: 	default,matcher,-option-popup,-selection-popup,-readline
+!URxvt*perl-ext: 	mark-urls
+URxvt.matcher.button:   1
+URxvt.matcher.pattern.1:\\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+! Colors
+!!black
+URxvt*color0:         	#676767
+URxvt*color8:         	#757575
+!red
+URxvt*color1:         	#EA6868
+URxvt*color9:         	#FF7272
+!green
+URxvt*color2:         	#ABCB8D
+URxvt*color10:          #AFD78A
+!yellow
+URxvt*color3:         	#E8AE5B
+URxvt*color11:          #FFA75D
+!blue
+URxvt*color4:         	#71C5F4
+URxvt*color12:          #67CDE9
+!magenta
+URxvt*color5:         	#E2BAF1
+URxvt*color13:          #ECAEE9
+!cyan
+URxvt*color6:         	#21F1EA
+URxvt*color14:          #36FFFC
+!white
+URxvt*color7:         	#F1F1F1
+URxvt*color15:          #FFFFFF
+
+!color stuff
+URxvt*tintColor:    	#dfdfdf
+URxvt.cursorColor:  	#89B83F
+URxvt.pointerColor: 	#89B83F
+
+!Other
+URxvt.saveLines:	11000
