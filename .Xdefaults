@@ -7,8 +7,8 @@ xft*rgba: rgb
 #URxvt*termName:		rxvt
 
 URxvt*depth:		32
-URxvt*font: 		-xos4-terminus-medium-r-normal-*-14-*-*-*-*-*-*-*
-URxvt*boldFont: 	-xos4-terminus-bold-*-*-*-14-*-*-*-*-*-*-u
+URxvt*font: 		xft:Terminus:pixelsize=14:antialias=false
+URxvt*boldFont: 	xft:Terminus:bold:pixelsize=14:antialias=false
 URxvt*reverseVideo:     false
 URxvt*fading:   	20
 URxvt*fadecolor:  	#71C5F4
@@ -23,9 +23,9 @@ URxvt*termName: 	rxvt-unicode
 URxvt.mapAlert:   	True
 URxvt.visualBell: 	False
 ! Plugin stuff
-URxvt*urlLauncher: 	opera -newpage
+URxvt*urlLauncher: 	uzbl-browser
 URxvt.perl-ext-common: 	default,matcher,-option-popup,-selection-popup,-readline
-!URxvt*perl-ext: 	mark-urls
+URxvt*perl-ext: 	mark-urls
 URxvt.matcher.button:   1
 URxvt.matcher.pattern.1:\\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
 ! Colors
@@ -42,14 +42,14 @@ URxvt*color10:          #AFD78A
 URxvt*color3:         	#E8AE5B
 URxvt*color11:          #FFA75D
 !blue
-URxvt*color4:         	#71C5F4
-URxvt*color12:          #67CDE9
+URxvt*color4:         	#62B4E9
+URxvt*color12:          #71A3BE
 !magenta
 URxvt*color5:         	#E2BAF1
 URxvt*color13:          #ECAEE9
 !cyan
-URxvt*color6:         	#21F1EA
-URxvt*color14:          #36FFFC
+URxvt*color6:         	#0EC5C8
+URxvt*color14:          #30E4E1
 !white
 URxvt*color7:         	#F1F1F1
 URxvt*color15:          #FFFFFF

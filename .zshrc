@@ -15,10 +15,12 @@ compinit
 
 alias ls='ls --color=auto'
 alias sbroot="sbroot -m -w linux32"
+alias baulkD='cd /home/hyatt/Source/qt4/baulk/src'
+alias amdroid='cd /home/hyatt/Source/android/amdroid-h'
 
 export CVSROOT=:pserver:jacoba@cvs/cvs
 export EDITOR=vim
-PATH=$PATH:/usr/local/bin:/opt/kde/bin
+PATH=$PATH:/usr/local/bin:/opt/kde/bin:/opt/android-sdk/tools:/opt/java/bin:/usr/share/java/apache-ant/bin
 
 bindkey '^R' history-incremental-search-backward
 bindkey '\e[3~' delete-char
@@ -93,10 +95,6 @@ setprompt () {
 
     ###
     # Chroot info.
-    chroot_info() {
-    	chrootINFO=`cat /opt/chroot` || return
-	echo "${chrootINFO}"
-    }
 
     ###
     # Git prompt
@@ -111,12 +109,6 @@ setprompt () {
 	    outputTMP=""
 	    if [ $(git_prompt_info) ]; then
 		    outputTMP="[$PR_YELLOW$(git_prompt_info)$PR_BLUE]"
-            fi
-	    if [ $(chroot_info) ]; then
-		    outputTMP="[$PR_YELLOW$(chroot_info)$PR_BLUE]"
-            fi
-	    if [ $(chroot_info) -a $(git_prompt_info) ]; then
-		    outputTMP="[$PR_YELLOW$(chroot_info)$PR_GREEN-$PR_YELLOW$(git_prompt_info)$PR_BLUE]"
             fi
 
 	    if [ -z outputTMP ]; then
