@@ -17,7 +17,7 @@ GETCURL="curl -b $COOKIES"
 #| Fix wget retardedness with cookies for ampache, curl too...
 if echo $url | grep -E "ampache"; then
 	sed -n "s/^.*FALSE.*FALSE.*ampache\t\(.*\)$/\1/g w $ampacheIDLoc" $COOKIES
-	ampacheID="`cat $ampacheIDLoc`"
+	ampacheID="`sed -n '$p' $ampacheIDLoc`"
 	GET="$GET --header=Cookie:ampache=$ampacheID"
 	GETCURL="curl -b ampache_remember=Rappelez-vous%2C+rappelez-vous+le+27+mars;ampache=$ampacheID"
 fi

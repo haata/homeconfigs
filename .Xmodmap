@@ -1,0 +1,12 @@
+keysym KP_Left = Left KP_4
+keysym KP_Right = Right KP_6
+keysym KP_Up = Up KP_8
+keysym KP_Down = Down KP_2
+keysym KP_Prior = Prior KP_9
+keysym KP_Next = Next KP_3
+keysym KP_Delete = Delete KP_Decimal
+keysym KP_Home = Home KP_7
+keysym KP_Insert = Insert KP_0
+keysym KP_End = End KP_1
+!keycode 76 = F13
+add mod4 = F10

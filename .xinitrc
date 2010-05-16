@@ -19,7 +19,8 @@ sleep 3
 setxkbmap us -variant colemak
 sleep 2
 xset r 66
-xmodmap ~/.Xmodmap
+#xmodmap ~/.Xmodmap
+xmodmap ~/.xmodmap-QuadMas
 } &
 
 exec awesome
