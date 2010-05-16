@@ -306,9 +306,11 @@ set preset = event PRESET_TABS
 @cbind  gli                 = @preset list
 
 # --- Web searching binds ---
-@cbind  gg<Google:>_         = uri http://www.google.ca/search?q=\@<encodeURIComponent(%r)>\@
-@cbind  \\awiki<Archwiki:>_  = uri http://wiki.archlinux.org/index.php/Special:Search?search=\@<encodeURIComponent(%r)>\@&go=Go
-@cbind  \\wiki<Wikipedia:>_  = uri http://en.wikipedia.org/w/index.php?title=Special:Search&search=\@<encodeURIComponent(%r)>\@&go=Go
+@cbind  gg<Google:>_          = uri http://www.google.ca/search?q=\@<encodeURIComponent(%r)>\@
+@cbind  \\awiki<Archwiki:>_   = uri http://wiki.archlinux.org/index.php/Special:Search?search=\@<encodeURIComponent(%r)>\@&go=Go
+@cbind  \\anidb<AniDB:>_      = uri http://anidb.net/perl-bin/animedb.pl?show=animelist&adb.search=\@<encodeURIComponent(%r)>\@&do.search=search
+@cbind  \\tt<TokyoToshokan:>_ = uri http://tokyotosho.info/search.php?terms=\@<encodeURIComponent(%r)>\@
+@cbind  \\wiki<Wikipedia:>_   = uri http://en.wikipedia.org/w/index.php?title=Special:Search&search=\@<encodeURIComponent(%r)>\@&go=Go
 
 # --- Handy binds ---
 # Set function shortcut
